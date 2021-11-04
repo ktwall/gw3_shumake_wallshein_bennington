@@ -105,6 +105,7 @@ main .btn {
 
   #about img {
     height: 500px;
+
 }
 
 body {
@@ -319,7 +320,6 @@ figcaption{
 }
 
 .gallery {
-    margin-left: 200px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -382,11 +382,11 @@ footer h4 {
 }
 
 /*------------ media queries -----------------------*/
-@media screen and  (max-width: 480px){
-  .sidenav{
-    display: none;
-    width: 0%;
+@media screen and  (min-width: 320px){
+.main {
+  width:100%;
 }
+
 figure {
   display: flex;
   justify-content: space-around;
@@ -395,12 +395,7 @@ figure {
   line-height: 1.25em;
   padding-top: 10px;
 }
-figure img{
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-}
-  }
+
 
 
 @media screen and  (max-width: 780px){
@@ -427,6 +422,10 @@ figure img{
       line-height: normal;
       padding: 20px;
       margin-left: 175px;
+    }
+
+    .gallery {
+      margin-left: 200px;
     }
 }
 
